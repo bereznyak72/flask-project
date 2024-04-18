@@ -15,13 +15,17 @@ def about():
 
 @app.route('/soup')
 def soap():
-    return render_template('soup.html', title='Рецепт супы')
+    return render_template('soup.html', title='Рецепт супа')
 
 
 @app.route('/bread')
 def bread():
     return render_template('bread.html', title='Рецепт хлеба')
 
+
+@app.route('/borsch')
+def borsch():
+    return render_template('borsch.html', title='Рецепт борща')
 
 if __name__ == '__main__':
     app.run(port=8081, host='127.0.0.1')
