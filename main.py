@@ -8,6 +8,7 @@ app = Flask(__name__)
 def main():
     return render_template('index.html', title='Главная страница')
 
+
 @app.route('/about')
 def about():
     return render_template('about.html', title='О нас')
@@ -26,6 +27,7 @@ def bread():
 @app.route('/borsch')
 def borsch():
     return render_template('borsch.html', title='Рецепт борща')
+
 
 if __name__ == '__main__':
     app.run(port=8081, host='127.0.0.1')
