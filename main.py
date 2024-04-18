@@ -9,5 +9,15 @@ def main():
     return render_template('index.html', title='Главная страница')
 
 
+@app.route('/soap')
+def soap():
+    return render_template('soap.html', title='Рецепт супы')
+
+
+@app.route('/bread')
+def bread():
+    return render_template('bread.html', title='Рецепт хлеба')
+
+
 if __name__ == '__main__':
-    app.run(port=8080, host='127.0.0.1')
+    app.run(port=8081, host='127.0.0.1')
