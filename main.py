@@ -9,9 +9,9 @@ def main():
     return render_template('index.html', title='Главная страница')
 
 
-@app.route('/soap')
+@app.route('/soup')
 def soap():
-    return render_template('soap.html', title='Рецепт супы')
+    return render_template('soup.html', title='Рецепт супы')
 
 
 @app.route('/bread')
