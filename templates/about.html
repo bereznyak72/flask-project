@@ -1,5 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-Мы тута
+<div class="row featurette">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"> Кулинарное путешествие, <span class="text-body-secondary">которое поможет расти и развиваться.</span>
+        </h2>
+        <p class="lead"> Добро пожаловать на нашу кулинарную площадку, созданную именно для начинающих поваров!
+            Это место, где каждый может найти новый любимый рецепт. Мы вместе открываем новые горизонты вкуса,
+            помогаем друг другу расти и развиваться в кулинарии. Следите за нами, и вместе мы сделаем
+            кулинарию еще более интересной и разнообразной!</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="{{ url_for('static', filename='img/Screenshot_1.png') }}" width="400" height="500">
+    </div>
+</div>
 {% endblock %}
