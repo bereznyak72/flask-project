@@ -39,5 +39,10 @@ def kulich():
     return render_template('kulich.html', tittle='Рецепт кулича')
 
 
+@app.route('/pancakes')
+def pancakes():
+    return render_template('pancakes.html', tittle='Рецепт оладьев')
+
+
 if __name__ == '__main__':
     app.run(port=8081, host='127.0.0.1')
