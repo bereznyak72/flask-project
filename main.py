@@ -19,6 +19,14 @@ def soap():
     return render_template('soup.html', title='Рецепт супа')
 
 
+@app.route('/croissant')
+def croissant():
+    return render_template('croissant.html', tittle='Рецепт круассана')
+
+
+@app.route('/')
+
+
 @app.route('/bread')
 def bread():
     return render_template('bread.html', title='Рецепт хлеба')
