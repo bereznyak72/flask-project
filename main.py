@@ -24,9 +24,6 @@ def croissant():
     return render_template('croissant.html', tittle='Рецепт круассана')
 
 
-@app.route('/')
-
-
 @app.route('/bread')
 def bread():
     return render_template('bread.html', title='Рецепт хлеба')
@@ -35,6 +32,11 @@ def bread():
 @app.route('/borsch')
 def borsch():
     return render_template('borsch.html', title='Рецепт борща')
+
+
+@app.route('/kulich')
+def kulich():
+    return render_template('kulich.html', tittle='Рецепт кулича')
 
 
 if __name__ == '__main__':
